@@ -1,0 +1,73 @@
+Program_01:
+==========
+You are developing a JDBC-based Java application to manage customer data for a billing system using a Customer class and a test class.
+
+Requirements:
+-------------
+
+Customer Class:
+Attributes:
+-----------
+.String customerId
+.String customerName
+.String email
+.String phoneNumber
+.String address
+.String city
+.int pincode
+
+Functional Requirements:
+------------------------
+Define the above attributes as instance variables.
+
+->Create a method named insertCustomer(String customerId, String customerName, String email, String phoneNumber, String address, String city, int pincode) that:
+->Establishes a connection to an Oracle database.
+->Inserts the customer data into a table called CustomerTable using PreparedStatement.
+->Uses placeholders (?) for each parameter in the SQL query.
+->Executes the query and prints "Customer record inserted successfully" on success.
+->Handles any exceptions using a try-catch block and displays the error message.
+
+BillingSystemApp Class:
+-----------------------
+Functional Requirements:
+.Create at least three Customer objects.
+.Call the insertCustomer() method for each object with different values.
+.Demonstrate calling the method using:
+
+Direct method parameters.
+
+.Instance variables set via setters or constructors (optional).
+.Optionally, create another method called displayCustomerByCity(String city) that:
+Accepts a city name.
+.Fetches and displays all customers from that city using a SELECT query.
+
+Additional Notes:
+-----------------
+Oracle JDBC URL:jdbc:oracle:thin:@localhost:1521:XE
+       Username: xxxxxx
+       Password: xxxxxx
+
+Consider creating a parameterized constructor or setter methods for flexible initialization.
+
+The CustomerTable in the database must include matching columns:
+(customerId, customerName, email, phoneNumber, address, city, pincode)
+
+Note:
+1.Use Scanner Class to take input.
+2.U will perform this operation using PreparedStatement Interface.
+
+
+Program_02:
+===========
+Write a jdbc program as follows:
+Note:Create a table:-Product (U can create table from database).
+              Table Columns:-productId,productName,productPrice,productQty.
+Give Option to the user:
+          1.Insert productdetails into product table.
+          2.Retrieve productdetails in forward direction.
+          3.Retrieve productdetails in reverse direction.
+          4.Retrieve 3rd record from top.
+          5.Retrieve 3rd record from bottom. 
+Note:
+1.Use Scanner Class to take input.
+2.U will perform this operation using PreparedStatement Interface.
