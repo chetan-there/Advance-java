@@ -1,0 +1,24 @@
+jdbc_task_day05
+
+
+Program_01:Write a JDBC program to retrieve empResume based on empPhNo and
+store that resume(file) at any location in your system.
+
+
+Program_02:
+===========
+step-1 : Create the following DB Tables
+StuData(stuId,stuRollNo,stuName,stuBranch)
+StuAddress(stuId,stuHno,city,pincode)
+StuContact(stuId,mid,phno)
+
+step-2 : Construct Procedure to insert student details into DB Tables.
+step-3 : Construct JDBC Application to execute Procedure.
+
+
+
+Program_03:Write a JDBC application to read the data from CSV file(excel sheet) and insert data into database.
+Example:
+Table:Emp_Info
+Columns:Id,firstName,lastName,email,gender.
+Note:Create table Emp_Info having above column and read this info from csv file and insert into database table Emp_Info.
