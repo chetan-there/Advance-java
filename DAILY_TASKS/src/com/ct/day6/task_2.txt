@@ -1,0 +1,48 @@
+
+Program Statement 02:
+========================
+  1      create or replace procedure  RetrievePatient(P_ID in number,P_Name out varchar2,P_Disease out varchar2,P_HouseNo out number,P_City out varchar2,P_Pin out number,P_Email out varchar2,P_Phone out number)
+  2      is
+  3      begin
+  4      select  PATIENTNAME, PATIENTDISEASE into P_Name,P_Disease  from  PatientData where PATIENTID = P_ID ;
+  5      select HOUSENO,city, PINCODE into P_HouseNo,p_city,p_pin from  PatientAddress where PATIENTID = P_ID ;
+  6      select email,phoneNo into P_Email,P_Phone from  PatientContact where PATIENTID = P_ID ;
+  7*    end;
+SQL> /
+
+==================
+Write a Java program named CallableStatementRetrievePatient that connects to an Oracle database using JDBC. The program should include the following functionalities:
+
+Establish a connection to the database using the provided JDBC URL, username, and password.
+
+Define a method named callProcedure() that executes a stored procedure named getPatientDetails in the database.
+This method should:
+
+Use a CallableStatement to call the procedure.
+
+Pass the patientId as an input parameter to the procedure.
+
+Retrieve patient details such as:
+
+patientName, patientAge, patientDisease
+
+houseNo, city, pincode
+
+email, phoneNo
+
+Display the retrieved patient details on the console.
+
+Implement a main() method that demonstrates the usage of the connect() and callProcedure() methods. The main method should:
+
+Call the connect() method to establish a connection to the database.
+
+Call the callProcedure() method by providing a valid patientId.
+
+Close the CallableStatement and the database connection after executing the procedure call.
+
+Ensure appropriate exception handling for potential database connectivity issues and SQL errors.
+
+Program_03:Write a JDBC application to read the data from CSV file(excel sheet) and insert only even data(Id) into database.
+Table:Emp_Info
+Columns:Id,firstName,lastName,email,gender.
+
