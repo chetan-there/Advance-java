@@ -1,0 +1,56 @@
+Program Statement 01:
+=====================
+
+Write a Java program named CallableStatementHospital that connects to an Oracle database using JDBC. The program should include the following functionalities:
+
+Establish a connection to the database using the provided JDBC URL, username, and password.
+
+Define a method named callProcedure() that executes a stored procedure named insertPatientDetails in the database.
+This method should:
+Use a CallableStatement to call the procedure.
+
+Insert a patient's data into the following three tables:
+
+PatientData(patientId, patientName, patientAge, patientDisease)
+SQL> create table PatientData(patientId number(4),patientName varchar2(20),patientDisease varchar2(30));
+
+PatientAddress(patientId, houseNo, city, pincode)
+SQL> create table PatientAddress(patientId number(4), houseNo number(20), city varchar2(30), pincode number(10));
+
+
+
+PatientContact(patientId, email, phoneNo)
+SQL> create table PatientContact(patientId number(4), email varchar2(20), phoneNo number(10));
+
+=================================
+  1  create procedure  PatientDetails3(P_ID number,P_Name varchar2,P_Disease varchar2,P_HouseNo number,P_City varchar2,P_Pin number,P_Email varchar2,P_Phone number)
+  2  is
+  3  begin
+  4  insert into PatientData values(P_ID,P_Name,P_Disease);
+  5  insert into PatientAddress values(P_ID,P_HouseNo,P_City,P_Pin);
+  6  insert into PatientContact values(P_ID,P_Email,P_Phone);
+  7* end;
+SQL> /
+Name =>  PatientDetails3
+============================================================
+Accept required input values to insert records into the tables.
+
+Implement a main() method that demonstrates the usage of the connect() and callProcedure() methods. The main method should:
+
+Call the connect() method to establish a connection to the database.
+
+Call the callProcedure() method to execute the stored procedure and insert patient details.
+
+Close the CallableStatement and the database connection after executing the procedure call.
+
+Ensure proper exception handling for potential database connectivity issues and SQL errors.
+
+✅ Tables and Procedure Details:
+
+Tables to be created:
+
+PatientData(patientId, patientName, patientAge, patientDisease)
+
+PatientAddress(patientId, houseNo, city, pincode)
+
+PatientContact(patientId, email, phoneNo)
