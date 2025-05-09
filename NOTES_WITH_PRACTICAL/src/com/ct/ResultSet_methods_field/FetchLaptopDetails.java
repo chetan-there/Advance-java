@@ -100,5 +100,29 @@ Commonly used Methods from ResultSet to get control over the cursor:
 
 
 
+Laptops table from db
+
+Dell                 Inspiron             i5                            8      55000
+HP                   Pavilion             i7                           16      72000
+Lenovo               Ideapad              Ryzen                         5      48000
+Asus                 Vivobook             i3                            4      35000
+Apple                MacBook              M1                            8      95000
+
+> if you want to fetch data of first row then use
+	>call rs.start();
+
+	
+> Output 
+
+Dell Inspiron i5 8 55000
+
+> if you want to fetch data of last row then use
+	>call rs.last();
+
+ > Output 
+ 
+Apple MacBook M1 8 95000
+ 
+ 
  */
 
