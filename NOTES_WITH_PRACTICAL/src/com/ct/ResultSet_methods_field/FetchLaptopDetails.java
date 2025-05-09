@@ -123,6 +123,11 @@ Dell Inspiron i5 8 55000
  
 Apple MacBook M1 8 95000
  
- 
- */
+
+> if you want to fetch ypur data reverse so what you have to do
+	> call rs.afterLast();  // it is used to set the cursor on the specific position where you want 
+	> call rs.previous();	// it is used  to set the flow to printing data it is used in loop while
+	
+> Output 
+*/
 
