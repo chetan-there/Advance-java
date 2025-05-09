@@ -82,6 +82,23 @@ iii. ResultSet.TYPE_SCROLL_SENSITIVE    Cursor can move forward and backward,
                     database after the ResultSet was
                     created.
 
- 
+Types based on Updating:
+-----------------------------
+         Type                                 Meaning
+i. ResultSet.CONCUR_READ_ONLY          You can only read the ResultSet. You
+                                      cannot update its data. (default)
+
+ii. ResultSet.CONCUR_UPDATABLE          You can update, insert, or delete
+                                      rows inside the ResultSet.
+
+Commonly used Methods from ResultSet to get control over the cursor:
+- previous()            Moves cursor to previous row.
+- first()            Moves cursor to the first row.
+- last()            Moves cursor to the last row.
+- absolute(int row)    Moves cursor to the given row number.
+- relative(int rows)    Moves cursor relative to the current row.
+
+
+
  */
 
