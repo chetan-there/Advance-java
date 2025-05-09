@@ -129,5 +129,34 @@ Apple MacBook M1 8 95000
 	> call rs.previous();	// it is used  to set the flow to printing data it is used in loop while
 	
 > Output 
-*/
+
+Apple MacBook M1 8 95000
+Asus Vivobook i3 4 35000
+Lenovo Ideapad Ryzen 5 48000
+HP Pavilion i7 16 72000
+Dell Inspiron i5 8 55000
+
+	
+> if you want to fetch a data from specific row then use 
+	> call rs.absolute(2);
+	> call rs.previous();/rs.next(); based on your choice 
+	
+> Output 
+
+Lenovo Ideapad Ryzen 5 48000
+Asus Vivobook i3 4 35000
+Apple MacBook M1 8 95000
+
+> if you want to fetch relative data then use 
+	>call rs.relative(2); 
+	>call rs.next();
+ 
+> Output 
+
+Lenovo Ideapad Ryzen 5 48000
+Asus Vivobook i3 4 35000
+Apple MacBook M1 8 95000
+
+ 
+ */
 
