@@ -24,5 +24,17 @@ public class FetchLaptopDetails {
 }
 /* 
 
- */
-
+Types of ResultSet based in direction of movement:
+-----------------------------------------------------
+  1.  NonScrollable ResultSet:
+  -----------------------------
+     - It is a simple ResultSet, which moves forward
+       through the data.
+     - It can't move backward or not even in random order.
+        * You can move forward to the next row by using next().
+    * You cant move backwards by using previous() in case of NonScrollable
+      ResultSet.
+     - It is best for the situation where we have to read the data only once
+       from top to bottom.
+     
+ 
