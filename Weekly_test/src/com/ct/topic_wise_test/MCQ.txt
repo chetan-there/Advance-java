@@ -159,6 +159,5 @@ B. javax.jdbc
 C. java.sql
 D. jdbc.sql
 ✅ Correct Answer: C. java.sql
-________________________________________
-Would you like these formatted as a PDF or printed in a table for revision?
+
 
