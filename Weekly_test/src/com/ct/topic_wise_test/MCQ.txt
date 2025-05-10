@@ -1,0 +1,164 @@
+Here is the complete exam result with each question, its options, and the correct answer clearly mentioned step-by-step:
+________________________________________
+1. Which statement is used for executing static SQL queries in JDBC?
+Options:
+A. PreparedStatement
+B. Statement
+C. CallableStatement
+D. ResultSet
+✅ Correct Answer: B. Statement
+________________________________________
+2. Which method is used to execute INSERT, UPDATE, or DELETE queries using Statement?
+Options:
+A. executeQuery()
+B. executeUpdate()
+C. execute()
+D. runQuery()
+✅ Correct Answer: B. executeUpdate()
+________________________________________
+3. How are parameters represented in a PreparedStatement query?
+Options:
+A. %
+B. :param
+C. ?
+D. &
+✅ Correct Answer: C. ?
+________________________________________
+4. What is a key benefit of using PreparedStatement over Statement?
+Options:
+A. Less secure
+B. Slower performance
+C. Faster for repeated queries
+D. No benefit
+✅ Correct Answer: C. Faster for repeated queries
+________________________________________
+5. Which class is responsible for managing a set of JDBC drivers?
+Options:
+A. Connection
+B. Driver
+C. DriverManager
+D. DriverFactory
+✅ Correct Answer: C. DriverManager
+________________________________________
+6. Which JDBC driver type is known as the "thin driver"?
+Options:
+A. Type 1
+B. Type 2
+C. Type 3
+D. Type 4
+✅ Correct Answer: D. Type 4
+________________________________________
+7. Which type of JDBC driver uses ODBC driver to connect to the database?
+Options:
+A. Type 1
+B. Type 2
+C. Type 3
+D. Type 4
+✅ Correct Answer: A. Type 1
+________________________________________
+8. Which method moves the cursor to the next row in ResultSet?
+Options:
+A. first()
+B. previous()
+C. move()
+D. next()
+✅ Correct Answer: D. next()
+________________________________________
+9. Which method of the Connection interface is used to create a Statement object?
+Options:
+A. getStatement()
+B. createStatement()
+C. prepareStatement()
+D. newStatement()
+✅ Correct Answer: B. createStatement()
+________________________________________
+10. What is the first step in the JDBC process?
+Options:
+A. Create Statement
+B. Load the JDBC driver
+C. Execute query
+D. Open browser
+✅ Correct Answer: B. Load the JDBC driver
+________________________________________
+11. What is the main advantage of PreparedStatement over Statement?
+Options:
+A. Cannot use parameters
+B. Compiles query every time
+C. Can compile SQL once and reuse with parameters
+D. Only works with SELECT
+✅ Correct Answer: C. Can compile SQL once and reuse with parameters
+________________________________________
+12. What is the main purpose of JDBC in Java?
+Options:
+A. Create GUI
+B. Connect to remote desktop
+C. Connect Java applications to a database
+D. Print HTML
+✅ Correct Answer: C. Connect Java applications to a database
+________________________________________
+13. Which method is used to load a JDBC driver class explicitly?
+Options:
+A. DriverManager.getDriver()
+B. Connection.loadDriver()
+C. Class.forName()
+D. Driver.load()
+✅ Correct Answer: C. Class.forName()
+________________________________________
+14. What does the ResultSet interface represent in JDBC?
+Options:
+A. A connection
+B. An update query
+C. A table of data returned by a query
+D. A database
+✅ Correct Answer: C. A table of data returned by a query
+________________________________________
+15. Which method sets a string parameter in a PreparedStatement?
+Options:
+A. insertString()
+B. setString()
+C. putString()
+D. inputString()
+✅ Correct Answer: B. setString()
+________________________________________
+16. What happens if ResultSet.next() returns false?
+Options:
+A. There is another row
+B. There are no more rows
+C. Data is invalid
+D. Error is thrown
+✅ Correct Answer: B. There are no more rows
+________________________________________
+17. What is the role of the ResultSet object in JDBC?
+Options:
+A. Insert data
+B. Hold data retrieved from a database
+C. Compile SQL
+D. Handle exceptions
+✅ Correct Answer: B. Hold data retrieved from a database
+________________________________________
+18. Which of the following is a correct usage of PreparedStatement for an insert query?
+Options:
+A. ps.insert("JB")
+B. ps.add("JB")
+C. ps.setString(1, "JB")
+D. ps.put(1, "JB")
+✅ Correct Answer: C. ps.setString(1, "JB")
+________________________________________
+19. Which of the following is not a type of JDBC driver?
+Options:
+A. Type 1
+B. Type 2
+C. Type 3
+D. Compiler driver
+✅ Correct Answer: D. Compiler driver
+________________________________________
+20. Which of the following is the correct package for JDBC classes and interfaces?
+Options:
+A. java.jdbc
+B. javax.jdbc
+C. java.sql
+D. jdbc.sql
+✅ Correct Answer: C. java.sql
+________________________________________
+Would you like these formatted as a PDF or printed in a table for revision?
+
